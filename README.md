@@ -1,5 +1,5 @@
 
-# Morse Code & AES Encryption/Decryption Web Application
+# Crypt_Web_ver1.0 (Morse Code & AES Encryption/Decryption Web Application)
 
 This is a Java-based Spring Boot web application that allows users to:
 
