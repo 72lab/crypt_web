@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypted Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">AES Decrypted Result</h1>
+
+        <h3>Encrypted Text:</h3>
+        <p th:text="${encryptedText}"></p>
+
+        <h3>Decrypted Text:</h3>
+        <p th:text="${decryptedText}"></p>
+
+        <a href="/" class="btn btn-secondary">Decrypt Another</a>
+    </div>
+</body>
+</html>

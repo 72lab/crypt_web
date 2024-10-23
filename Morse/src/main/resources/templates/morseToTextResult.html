@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse to Text Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Morse Code to Text Result</h1>
+
+        <h3>Original Morse Code:</h3>
+        <p th:text="${morseCode}"></p>
+
+        <h3>Converted Text:</h3>
+        <p th:text="${text}"></p>
+
+        <a href="/" class="btn btn-secondary">Convert Another</a>
+    </div>
+</body>
+</html>

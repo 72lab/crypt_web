@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypt_ver1.0</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Crypt_1.0 (web_version)</h1>
+
+        <!-- Morse Code Translation Form -->
+        <form action="/translate" method="POST">
+            <div class="form-group">
+                <label for="text">Enter text for Morse Code:</label>
+                <input type="text" id="text" name="text" class="form-control" placeholder="Enter your text here" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Translate to Morse Code</button>
+        </form>
+
+        <!-- Morse to Text Form -->
+        <form action="/morse-to-text" method="POST" class="mt-5">
+            <div class="form-group">
+                <label for="morseCode">Enter Morse Code:</label>
+                <input type="text" id="morseCode" name="morseCode" class="form-control" placeholder="Enter Morse code (use / for spaces between words)" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Translate Morse to Text</button>
+        </form>
+
+        <!-- AES Encryption Form -->
+        <form action="/encrypt" method="POST" class="mt-5">
+            <div class="form-group">
+                <label for="encryptText">Enter text for AES Encryption:</label>
+                <input type="text" id="encryptText" name="encryptText" class="form-control" placeholder="Enter your text for encryption" required>
+            </div>
+            <div class="form-group">
+                <label for="key">Enter AES Key (Any length):</label>
+                <input type="text" id="key" name="key" class="form-control" placeholder="Enter an AES key" required>
+            </div>
+            <button type="submit" class="btn btn-success">Encrypt Text</button>
+        </form>
+
+        <!-- AES Decryption Form -->
+        <form action="/decrypt" method="POST" class="mt-5">
+            <div class="form-group">
+                <label for="decryptText">Enter text for AES Decryption:</label>
+                <input type="text" id="decryptText" name="decryptText" class="form-control" placeholder="Enter your encrypted text here" required>
+            </div>
+            <div class="form-group">
+                <label for="decryptKey">Enter AES Key (Any length):</label>
+                <input type="text" id="decryptKey" name="decryptKey" class="form-control" placeholder="Enter the decryption key" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Decrypt Text</button>
+        </form>
+
+        <!-- Error Message Display -->
+        <div class="mt-3 text-danger" th:if="${error}">
+            <p th:text="${error}"></p>
+        </div>
+
+    </div>
+</body>
+</html>
