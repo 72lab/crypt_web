@@ -23,9 +23,8 @@ The application is built using **Spring Boot**, **Thymeleaf**, and **Java AES en
    - [Morse Code to Text](#morse-code-to-text)
    - [AES Encryption](#aes-encryption)
    - [AES Decryption](#aes-decryption)
-7. [Contributing](#contributing)
-8. [License](#license)
-
+7. [Visual References](#visual-references)
+   
 ---
 
 ## Features
@@ -171,6 +170,17 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Open a Pull Request.
 
 ---
- ### WayneCorp © 🦇
+## Visual References
+![sfsfd](https://github.com/user-attachments/assets/18ec52a9-2b5e-401b-87e0-b272f535fc4c)
+![Screenshot 2024-10-24 021006](https://github.com/user-attachments/assets/3a377ecc-d1cd-4008-a5dd-2b84e0ca818e)
+![photo_2024-10-24_02-28-52](https://github.com/user-attachments/assets/70f6beb4-d397-44c3-a133-809607668dd2)
+![photo_2024-10-24_02-29-00](https://github.com/user-attachments/assets/d494eba7-2206-4ad8-8fc1-b40bd66d051b)
+![photo_2024-10-24_02-28-39](https://github.com/user-attachments/assets/7efc46bd-cc1d-44e1-880e-60a7baeeb1f4)
+![photo_2024-10-24_02-29-05](https://github.com/user-attachments/assets/8fa892de-333c-4b2d-a33f-4fb5644872a3)
+
+
+---
+---
+ ### WayneCorp © 🦇 < Swapnil Mishra />
 ---
 
